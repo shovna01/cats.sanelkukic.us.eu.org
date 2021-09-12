@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/ns#">
+    <head>
+        <title>Cats :: Sanel Kukic</title>
+        <meta charset="utf-8" http-equiv="encoding"/>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="theme-color" content="#000084" />
+        <link rel="icon" href="https://sanelkukic.us.eu.org/favicon.ico">
+        <link rel="canonical" href="https://cats.sanelkukic.us.eu.org">
+        <meta name="description" content="Images of my two pet cats, Kitty & Mini!"/>
+        <meta property="og:title" content="Cats :: Sanel Kukic"/>
+        <meta property="og:description" content="Images of my two pet cats, Kitty & Mini!"/>
+        <meta property="og:url" content="https://cats.sanelkukic.us.eu.org"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:image" content="https://sanelkukic.us.eu.org/profile_picture.png"/>
+        <meta property="og:image:alt" content="Site Favicon"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="./main.js"></script>
+        <script src="https://kit.fontawesome.com/bc7861958f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center">Cats</h1>
+            <div class="container-md">
+                <p class="lead">Welcome to the official website of my two pet cats, Kitty & Mini! Here you can view randomly-selected pictures of them!</p>
+                <br>
+                <p class="small">If the API status below shows as "unknown" or "down", then the website <b>will not work</b>. Please try again at a later time.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="apiStatusAlert" class="alert alert-primary text-center" role="alert">
+                            <p class="text-center">The API is currently</p><p id="apiStatus" class="text-center"><i class='fas fa-question'></i><b>unknown</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Kitty</h5>
+                                <p class="card-text">Kitty is a former stray cat that we've adopted quite a few years ago. Kitty has been with me through the ups and downs and is a beloved member of my family.</p>
+                                <button class="btn btn-primary" onclick="window.location.href = './kitty/';" href="#">View Kitty's pictures</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mini</h5>
+                                <p class="card-text">Mini is a kitten that used to be stray but after multiple vet visits, is now an additional beloved member of my family! Mini is only 4 months old!</p>
+                                <button class="btn btn-primary" href="#" onclick="window.location.href = './mini/';">View Mini's pictures</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="container-md">
+                <p id="imgCount">Please wait...</p>
+            </div>
+            <br>
+            <div class="container-sm">
+                <p>&copy; 2021 <a href="https://sanelkukic.us.eu.org">Sanel Kukic</a> - All Rights Reserved</p>
+            </div>
+        </div>
+    </body>
+</html>
